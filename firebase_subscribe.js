@@ -16,10 +16,10 @@ if ('Notification' in window) {
 
     // по клику, запрашиваем у пользователя разрешение на уведомления
     // и подписываем его
-    //$('#subscribe').on('click', function () {
-    //    subscribe();
-    //});
-    subscribe.onclick = subscribe();
+    $('#subscribe').on('click', function () {
+        subscribe();
+    });
+    //subscribe.onclick = subscribe();
 }
 
 function subscribe() {
