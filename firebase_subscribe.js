@@ -10,7 +10,7 @@ if ('Notification' in window) {
 
     // пользователь уже разрешил получение уведомлений
     // подписываем на уведомления если ещё не подписали
-    if (Notification.permission === 'default') {
+    if (Notification.permission === 'granted') {
         subscribe();
     }
 
