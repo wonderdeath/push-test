@@ -1,4 +1,7 @@
-// firebase_subscribe.js
+$( document ).ready(function() {
+    console.log( "ready!" );
+  
+  // firebase_subscribe.js
 firebase.initializeApp({
     messagingSenderId: '568207334148'
 });
@@ -47,6 +50,9 @@ function subscribe() {
         console.warn('Не удалось получить разрешение на показ уведомлений.', err);
     });
 }
+  
+});
+
 
 // отправка ID на сервер
 function sendTokenToServer(currentToken) {
